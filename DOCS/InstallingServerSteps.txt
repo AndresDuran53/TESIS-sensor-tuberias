@@ -1,0 +1,20 @@
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo apt-get install apache2 apache2-utils
+$ sudo apt-get install libapache2-mod-php5 php5 php-pear php5-xcache php5-mysql php5-curl php5-gd
+$ sudo /etc/init.d/apache2 restart
+$ sudo apt-get install mysql-server python-mysqldb -y
+
+$sudo nano /etc/mysql/my.cnf
+	//Modificar  "bind-address=127.0.0.1" a "bind-address=0.0.0.0"
+
+$ mysql -u root -p
+mysql> CREATE DATABASE DBname
+mysql> USE DBname
+mysql> CREATE USER 'user'@'%' IDENTIFIED BY 'password';
+mysql> GRANT ALL PRIVILEGES ON DBname.* TO 'user'@'%';
+mysql> FLUSH PRIVILEGES;
+mysql> quit
+
+
+http://raspberrywebserver.com/sql-databases/using-mysql-on-a-raspberry-pi.html

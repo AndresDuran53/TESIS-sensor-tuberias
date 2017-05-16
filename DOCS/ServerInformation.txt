@@ -1,0 +1,6 @@
+Hardware: RaspberryPi 3
+	https://www.raspberrypi.org/
+
+OS: Linux
+Distro: Raspbian (Debian)
+	https://www.raspberrypi.org/downloads/raspbian/
